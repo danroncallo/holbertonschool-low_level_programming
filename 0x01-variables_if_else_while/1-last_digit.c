@@ -3,30 +3,30 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
- * Return: Always 0 (Success)
- */
+* main - Entry point
+* Return: Always 0
+*/
 
 int main(void)
 {
-int x;
-int y;
+int n;
+int r;
 
 srand(time(0));
-x = rand() - RAND_MAX / 2;
-y = x % 10;
+n = rand() - RAND_MAX / 2;
 
-if (y > 5)
+r = n % 10;
+if (r > 5)
 {
-printf("Last digit of %i is %i and is greater than 5\n", x, y);
+printf("Last digit of %i is %i and is greater than 5\n", n, r);
 }
-else if (y == 0)
+else if (r == 0)
 {
-printf("Last digit of %i is %i and is 0\n", x, y);
+printf("Last digit of %i is %i and is 0\n", n, r);
 }
 else
 {
-printf("Last digit of %i is %i and is less than 6 and not 0\n", x, y);
+printf("Last digit of %i is %i and is less than 6 and not 0\n", n, r);
 }
 
 return (0);
