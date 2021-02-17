@@ -40,7 +40,7 @@ num = 1;
 d = s[init] - '0';
 for (i = 0; i < finish - init ; i++)
 num = num * 10;
-num = num * d;
+num = num *d;
 sum = num + sum;
 }
 if (sign % 2 == 1)
